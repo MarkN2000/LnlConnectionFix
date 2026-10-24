@@ -6,7 +6,7 @@ Prevents missed disconnects (including missing `UserLeft` events), dropped incom
 
 Install on the session host, including headless servers. Connecting users do not need this mod. No configuration required.
 
-Pre-release: checked against Resonite 2026.9.18.82 with RML 5.0.1 on .NET 10. Live sessions and headless startup have not yet been tested.
+Checked against Resonite 2026.9.18.82 with RML 5.0.1 on .NET 10. Live sessions and headless startup have not yet been tested.
 
 ## Installation
 
