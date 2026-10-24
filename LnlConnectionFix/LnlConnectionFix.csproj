@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Version>0.1.0</Version>
+    <Authors>markn2000</Authors>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GamePath Condition="'$(GamePath)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Resonite</GamePath>
+    <RmlPath Condition="'$(RmlPath)' == ''">$(GamePath)</RmlPath>
+  </PropertyGroup>
+  <!-- 本体・ローダーのDLLは参照のみ。自動コピーやゲームへの配置を行わない。 -->
+  <ItemGroup>
+    <Reference Include="$(GamePath)\FrooxEngine.dll;$(GamePath)\LiteNetLib.dll" Private="false" />
+    <Reference Include="$(RmlPath)\Libraries\ResoniteModLoader.dll;$(RmlPath)\rml_libs\0Harmony.dll" Private="false" />
+    <InternalsVisibleTo Include="LnlConnectionFix.Checks" />
+  </ItemGroup>
+</Project>

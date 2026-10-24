@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+
+# ローカルの仕様・解析メモ
+/SPEC.md
+/RESEARCH.md
